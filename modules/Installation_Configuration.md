@@ -42,7 +42,7 @@ called resteasy-jboss-modules-wf8-3.1.0-SNAPSHOT.zip. Unzip this file
 within the modules/system/layers/base/ directory of the Wildfly
 distribution. This will overwrite some of the existing files there.
 
-Configuring in JBoss AS 7, EAP, and Wildfly
+Configuring in JBoss AS 7, EAP, and Wildfly {#resteasy-modules-container}
 ===========================================
 
 RESTEasy is bundled with JBoss/Wildfly and completely integrated as per
@@ -115,7 +115,7 @@ and which aren't.
   org.jboss.resteasy.resteasy-yaml-provider        no                  YAML marshalling.
   org.jboss.resteasy.skeleton-key                  no                  OAuth2 support for AS7.
 
-Standalone Resteasy in Servlet 3.0 Containers
+Standalone Resteasy in Servlet 3.0 Containers {#servlet3}
 =============================================
 
 If you are using resteasy outside of JBoss/Wildfly, in a standalone
@@ -140,7 +140,7 @@ resteasy. Copy these into your /WEB-INF/lib directory. Place your JAX-RS
 annotated class resources and providers within one or more jars within
 /WEB-INF/lib or your raw class files within /WEB-INF/classes.
 
-Standalone Resteasy in Older Servlet Containers
+Standalone Resteasy in Older Servlet Containers {#older-servlet-container}
 ===============================================
 
 The `resteasy-servlet-initializer` artifact will not work in Servlet
@@ -172,7 +172,7 @@ example:
 The Resteasy servlet is responsible for initializing some basic
 components of RESTeasy.
 
-Configuration Switches
+Configuration Switches {#config-switches}
 ======================
 
 Resteasy receives configuration options from &lt;context-param&gt;
@@ -211,7 +211,7 @@ Then the value of resteasy-servlet.mapping.prefix must be:
     <param-value>/restful-services</param-value>
     </context-param>
 
-javax.ws.rs.core.Application {#javax.ws.rs.core.Application}
+javax.ws.rs.core.Application {#javax-ws-rs}
 ============================
 
 The javax.ws.rs.core.Application class is a standard JAX-RS class that

@@ -1,11 +1,11 @@
-Linking resources {#LinkHeader}
+Linking resources 
 =================
 
 There are two mechanisms available in RESTEasy to link a resource to
 another, and to link resources to operations: the Link HTTP header, and
 Atom links inside the resource representations.
 
-Link Headers
+Link Headers {#LinkHeader}
 ============
 
 RESTEasy has both client and server side support for the [Link header
@@ -17,7 +17,7 @@ org.jboss.resteasy.client.ClientResponse.
 The main advantage of Link headers over Atom links in the resource is
 that those links are available without parsing the entity body.
 
-Atom links in the resource representations
+Atom links in the resource representations {#AtomLinks}
 ==========================================
 
 RESTEasy allows you to inject [Atom
@@ -34,7 +34,7 @@ Atom links directly over the concerned resources, for any number of
 resources in the response. For example, you can have Atom links for the
 root response entity, and also for each of its children entities.
 
-Configuration
+Configuration {#configuration}
 -------------
 
 There is no configuration required to be able to inject Atom links in
@@ -47,7 +47,7 @@ in your path:
 
   : Maven artifact for Atom link injection
 
-Your first links injected
+Your first links injected {#firstlinks}
 -------------------------
 
 You need three things in order to tell RESTEasy to inject Atom links in
@@ -153,14 +153,14 @@ And in JSON format:
 }
 ```
 
-Customising how the Atom links are serialised
+Customising how the Atom links are serialised {#serialised}
 ---------------------------------------------
 
 Because the `RESTServiceDiscovery` is in fact a JAXB type which inherits
 from `List` you are free to annotate it as you want to customise the
 JAXB serialisation, or just rely on the default with `@XmlElementRef`.
 
-Specifying which JAX-RS methods are tied to which resources
+Specifying which JAX-RS methods are tied to which resources {#specify-resources}
 -----------------------------------------------------------
 
 This is all done by annotating the methods with the `@LinkResource`
@@ -203,7 +203,7 @@ links to the same method on several resource types. For example the
 the `comments` relation, and on the `Comment` resource with the `list`
 relation.
 
-Specifying path parameter values for URI templates
+Specifying path parameter values for URI templates {#uri}
 --------------------------------------------------
 
 When RESTEasy adds links to your resources it needs to insert the right
@@ -357,7 +357,7 @@ public interface BookStore {
 }
 ```
 
-Securing entities
+Securing entities {#securing-entities}
 -----------------
 
 You can restrict which links are injected in the resource based on
@@ -375,7 +375,7 @@ annotation, or using RESTEasy and EJB's security annotation
 
   : `@LinkResource` security restrictions
 
-Extending the UEL context
+Extending the UEL context {#extend-uel}
 -------------------------
 
 We've seen that both the URI template values and the security
@@ -485,7 +485,7 @@ public interface BookStore {
 }
 ```
 
-Resource facades
+Resource facades {#facades}
 ----------------
 
 Sometimes it is useful to add resources which are just containers or
