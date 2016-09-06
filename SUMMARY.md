@@ -10,7 +10,7 @@
    * [Standalone Resteasy in Servlet 3.0 Containers](modules/Installation_Configuration.md#servlet3)
    * [Standalone Resteasy in Older Servlet Containers](modules/Installation_Configuration.md#older-servlet-container)
    * [Configuration Switches](modules/Installation_Configuration.md#config-switches)
-   * [javax.ws.rs.core.Application](modules/Installation_Configuration.md#javax.ws.rs.core.Application)
+   * [javax.ws.rs.core.Application](modules/Installation_Configuration.md##javax-ws-rs)
    * [RESTEasy as a ServletContextListener](modules/Installation_Configuration.md#listener)
    * [RESTEasy as a servlet Filter](modules/Installation_Configuration.md#filter)
    * [RESTEasyLogging](modules/Installation_Configuration.md#RESTEasyLogging)
