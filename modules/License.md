@@ -1,0 +1,6 @@
+License
+=======
+
+RESTEasy is distributed under the ASL 2.0 license. It does not
+distribute any thirdparty libraries that are GPL. It does ship
+thirdparty libraries licensed under Apache ASL 2.0 and LGPL.
