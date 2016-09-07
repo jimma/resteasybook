@@ -1,7 +1,7 @@
 Resteasy Client API {#RESTEasy_Client_Framework}
 ===================
 
-JAX-RS 2.0 Client API
+JAX-RS 2.0 Client API {#client_api}
 =====================
 
 JAX-RS 2.0 introduces a new client API so that you can make http
@@ -39,7 +39,7 @@ components and properties registered with its parent. This allows you to
 set specific configuration options per target resource. For example,
 username and password.
 
-Resteasy Proxy Framework
+Resteasy Proxy Framework {#proxy_framework}
 ========================
 
 The Resteasy Proxy Framework is the mirror opposite of the JAX-RS

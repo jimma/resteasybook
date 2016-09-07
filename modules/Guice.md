@@ -72,7 +72,7 @@ option within your web.xml file. Also notice that there is a
 resteasy.guice.modules context-param. This can take a comma delimited
 list of class names that are Guice Modules.
 
-Request Scope
+Request Scope {#request_scope}
 =============
 
 Add the RequestScopeModule to your modules to allow objects to be scoped
@@ -94,7 +94,7 @@ injectable, except ServletConfig and ServletContext.
         private HttpRequest request;
     }
 
-Binding JAX-RS utilities
+Binding JAX-RS utilities {#binding_jax-rs}
 ========================
 
 Add the JaxrsModule to bind javax.ws.rs.ext.RuntimeDelegate,
@@ -102,7 +102,7 @@ javax.ws.rs.core.Response.ResponseBuilder, javax.ws.rs.core.UriBuilder,
 javax.ws.rs.core.Variant.VariantListBuilder and
 org.jboss.resteasy.client.ClientExecutor.
 
-Configuring Stage
+Configuring Stage {#config_stage}
 =================
 
 You can configure the stage Guice uses to deploy your modules by
@@ -143,7 +143,7 @@ specified, Resteasy uses whatever Guice's default is.
 
     </web-app>
 
-Custom Injector creation
+Custom Injector creation {#custom_injector}
 ========================
 
 GuiceResteasyBootstrapServletContextListener can be extended to allow

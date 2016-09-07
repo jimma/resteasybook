@@ -15,7 +15,7 @@ expanded it a little. To include it within your project, just add this
 maven dependency to your build. Resteasy supports both Jackson 1.9.x and
 Jackson 2.2.x. Read further on how to use each.
 
-Using Jackson 1.9.x Outside of JBoss AS7
+Using Jackson 1.9.x Outside of JBoss AS7 {#outside-as7-19}
 ========================================
 
 If you're deploying Resteasy outside of JBoss AS7 add the resteasy
@@ -27,7 +27,7 @@ jackson provder to your WAR pom.xml build
        <version>3.1.0-SNAPSHOT</version>
     </dependency>
 
-Using Jackson 1.9.x Inside of JBoss AS7
+Using Jackson 1.9.x Inside of JBoss AS7 {#inside-as7-19}
 =======================================
 
 If you're deploying Resteasy with JBoss AS7, there's nothing you need to
@@ -35,7 +35,7 @@ do except to make sure you've updated your AS7 distribution with the
 latest and greatest Resteasy. See the installation sectio of this
 documentation for more details.
 
-Using Jackson 2.2.x Outside of JBoss AS7
+Using Jackson 2.2.x Outside of JBoss AS7 {#outside-as7-22}
 ========================================
 
 If you're deploying Resteasy outside of JBoss AS7 add the resteasy
@@ -47,7 +47,7 @@ jackson provder to your WAR pom.xml build
        <version>3.1.0-SNAPSHOT</version>
     </dependency>
 
-Using Jackson 2.2.x Inside of JBoss AS7
+Using Jackson 2.2.x Inside of JBoss AS7 {#inside-as7-22}
 =======================================
 
 If you want to use Jackson 2.2.x inside of JBoss AS7 you'll have to
@@ -67,7 +67,7 @@ jackson2 ones.
         </deployment>
     </jboss-deployment-structure> 
 
-Additional Resteasy Specifics
+Additional Resteasy Specifics {#additional}
 =============================
 
 The first extra piece that Resteasy added to the integration was to

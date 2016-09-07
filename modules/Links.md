@@ -1,4 +1,4 @@
-Linking resources 
+Linking resources {#Linkresource}
 =================
 
 There are two mechanisms available in RESTEasy to link a resource to

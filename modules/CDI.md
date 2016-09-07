@@ -4,7 +4,7 @@ CDI Integration {#CDI}
 This module provides integration with JSR-299 (Contexts and Dependency
 Injection for the Java EE platform)
 
-Using CDI beans as JAX-RS components
+Using CDI beans as JAX-RS components {#cdi_beans}
 ====================================
 
 Both the JAX-RS and CDI specifications introduce their own component
@@ -26,7 +26,7 @@ archive), RESTEasy falls back to instantiating the class itself.
 As a result, CDI services like injection, lifecycle management, events,
 decoration and interceptor bindings can be used in JAX-RS components.
 
-Default scopes
+Default scopes {#default_scopes}
 ==============
 
 A CDI bean that does not explicitly define a scope is `@Dependent`
@@ -52,13 +52,13 @@ resteasy-cdi module alters the default scoping in the following way:
 > using stateless session beans or singletons. This requirement is
 > likely to be removed in future releases.
 
-Configuration within JBoss 6 M4 and Higher
+Configuration within JBoss 6 M4 and Higher {#config_within_jboss}
 ==========================================
 
 CDI integration is provided with no additional configuration with JBoss
 AS 6-M4 and higher.
 
-Configuration with different distributions
+Configuration with different distributions {#config_diff_distributions}
 ==========================================
 
 Provided you have an existing RESTEasy application, all that needs to be

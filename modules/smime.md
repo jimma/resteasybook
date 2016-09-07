@@ -1,4 +1,4 @@
-Body Encryption and Signing via SMIME
+Body Encryption and Signing via SMIME {#smime}
 =====================================
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) is a standard for
@@ -13,7 +13,7 @@ check out the example projects that come with the RESTEasy distribution.
 It shows both Java and Python clients exchanging S/MIME formatted
 messages with a JAX-RS service.
 
-Maven settings
+Maven settings {#maven_setting}
 ==============
 
 You must include the resteasy-crypto project to use the smime framework.
@@ -24,7 +24,7 @@ You must include the resteasy-crypto project to use the smime framework.
                 <version>3.1.0-SNAPSHOT</version>
             </dependency>
 
-Message Body Encryption
+Message Body Encryption {#message_encryption}
 =======================
 
 While HTTPS is used to encrypt the entire HTTP message, S/MIME
@@ -114,7 +114,7 @@ passed as a parameter to getEntity(). The message is in MIME format: a
 Content-Type header and body, so the EnvelopedInput class now has
 everything it needs to know to both decrypt and unmarshall the entity.
 
-Message Body Signing
+Message Body Signing {#message_signing}
 ====================
 
 S/MIME also allows you to digitally sign a message. It is a bit
@@ -217,7 +217,7 @@ unmarshalling and verifying a multipart/signed entity.
           Customer cust = (Customer)input.getEntity(Customer.class)
           input.verify(cert);
 
-application/pkcs7-signature
+application/pkcs7-signature {#application}
 ===========================
 
 application/pkcs7-signature is a data format that includes both the data

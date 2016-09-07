@@ -52,7 +52,7 @@ in a nutshell:
 > This is a great way to see OAuth2 in action and how it is configured.
 > You may also want to use this as a template for your applications.
 
-System Requirements
+System Requirements {#system_requirements}
 ===================
 
 -   JBoss AS 7.1.x or higher
@@ -69,7 +69,7 @@ System Requirements
 -   Browser-based apps must be configured to use servlet FORM
     authentication and web.xml security constraints
 
-Generate the Security Domain Key Pair
+Generate the Security Domain Key Pair {#domain_key_pair}
 =====================================
 
 Access tokens are digitally signed and verified by an RSA keypair. You
@@ -84,7 +84,7 @@ familiar with. Move this keystore file into a directory that you can
 reference from a configuration file. I suggest the
 standalone/configuration directory of your JBoss AS7 distribution.
 
-Setting up the Auth Server
+Setting up the Auth Server {#setup_server}
 ==========================
 
 The next thing you're gonna want to do is set up a web application to be
@@ -93,7 +93,7 @@ a new WAR to be your central authentication server. An existing web app
 must be configured to use servlet FORM authentication. Enabling OAuth2
 within this app will not change how normal users interact with it.
 
-Setting up your Security Domain
+Setting up your Security Domain {#setup_security_domain}
 -------------------------------
 
 You can use any set of JBoss AS7 login modules you want to store your
@@ -142,7 +142,7 @@ password. You probably don't want to grant permission automatically to
 an oauth client. A user will want to look at who is requesting
 permission. This role distinction gives you this capability.
 
-Auth Server Config File
+Auth Server Config File {#config_file}
 -----------------------
 
 You must create a configuration file that holds all the configuration
@@ -248,13 +248,13 @@ resources
 :   Root URLs of applications using this auth-server for SSO. This is
     OPTIONAL and only needed if you want to allow distributed logout.
 
-Set up web.xml
+Set up web.xml {#setup_web}
 --------------
 
 Set up your security constraints however you like. You must though use
 FORM authentication.
 
-Set up jboss-web.xml
+Set up jboss-web.xml {#setup_jboss}
 --------------------
 
 In jboss-web.xml in your WEB-INF directory, point to your security
@@ -267,7 +267,7 @@ domain as a normal secured web app does, and also use a specific valve.
         </valve>
     </jboss-web>
 
-Set up jboss-deployment-structure.xml
+Set up jboss-deployment-structure.xml {#setup_jboss_structure}
 -------------------------------------
 
 You must import the skeleton key modules so that the classes are visible
@@ -283,7 +283,7 @@ to this application. Include this file within WEB-INF
         </deployment>
     </jboss-deployment-structure>
 
-Tweak your login page
+Tweak your login page {#tweak_login_page}
 ---------------------
 
 The action url used by your login form is dependent on the oauth
@@ -301,14 +301,14 @@ action. Here's an example login.jsp page that uses this attribute:
         <input type="reset" value="Reset">
     </form>
 
-Setting Up An App for SSO
+Setting Up An App for SSO {#setup_app_sso}
 =========================
 
 This section specifies how you can use the central auth-server for SSO.
 Following these directions will use the auth-server for browser log in.
 The server will also be able to do bearer token authentication as well.
 
-SSO config file
+SSO config file {#sso_config}
 ---------------
 
 The best way to create the config file for your application is to ask
@@ -383,13 +383,13 @@ client-credentials
 
 :   Must specify the password of the oauth login client.
 
-Set up web.xml
+Set up web.xml {#setup_web_oauth}
 --------------
 
 Set up your security constraints however you like. You must though use
 FORM authentication.
 
-Set up jboss-web.xml
+Set up jboss-web.xml {#setup_jboss-web}
 --------------------
 
 In jboss-web.xml in your WEB-INF directory you need to use a specific
@@ -401,7 +401,7 @@ valve.
         </valve>
     </jboss-web>
 
-Set up jboss-deployment-structure.xml
+Set up jboss-deployment-structure.xml {#jboss-deployment-structure}
 -------------------------------------
 
 You must import the skeleton key modules so that the classes are visible
@@ -417,14 +417,14 @@ to this application. Include this file within WEB-INF
         </deployment>
     </jboss-deployment-structure>
 
-Bearer Token only Setup
+Bearer Token only Setup {#bearer}
 =======================
 
 If you have a web app that you want only to allow Bearer token
 authentication, i.e. a set of JAX-RS services then follow these
 directions.
 
-Bearer token auth config file
+Bearer token auth config file {#bearer_token}
 -----------------------------
 
 The best way to create the config file for your application is to ask
@@ -453,13 +453,13 @@ realm-public-key
 
 :   PEM format of the realm's public key. Used to verify tokens.
 
-Set up web.xml
+Set up web.xml {#bearer_web}
 --------------
 
 Set up your security constraints however you like. You must though use
 FORM authentication.
 
-Set up jboss-web.xml
+Set up jboss-web.xml {#bearer_jboss-web}
 --------------------
 
 In jboss-web.xml in your WEB-INF directory you need to use a specific
@@ -471,7 +471,7 @@ valve.
         </valve>
     </jboss-web>
 
-Set up jboss-deployment-structure.xml
+Set up jboss-deployment-structure.xml {#bearer_jboss-deployment}
 -------------------------------------
 
 You must import the skeleton key modules so that the classes are visible
@@ -487,7 +487,7 @@ to this application. Include this file within WEB-INF
         </deployment>
     </jboss-deployment-structure>
 
-Obtaining an access token programmatically.
+Obtaining an access token programmatically. {#obtain_access_token}
 ===========================================
 
 You can request an access token from the auth-server by doing a simple
@@ -524,7 +524,7 @@ The access token is a simple string. To invoke on a service protected by
 bearer token auth, just set the `Authorization` header of your HTTPS
 request with a value of `Bearer` and then the access token string.
 
-Access remote services securely in a secure web session
+Access remote services securely in a secure web session {#access_remote_services}
 =======================================================
 
 If you have an application secured by one of the methods described in
@@ -560,7 +560,7 @@ of that.
 If you are within a JAX-RS environment you can inject a
 `SkeletonKeySession` using the `@Context` annotation.
 
-Check Out the OAuth2 Example!
+Check Out the OAuth2 Example! {#check_out_oauth2}
 =============================
 
 > **Important**
@@ -568,7 +568,7 @@ Check Out the OAuth2 Example!
 > The Resteasy distribution comes with an example project that shows all
 > of these different features in action! Check it out!
 
-Auth Server Action URLs
+Auth Server Action URLs {#auth_server_url}
 =======================
 
 For reference, here is the set of relative URL actions that the auth
