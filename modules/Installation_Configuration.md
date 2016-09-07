@@ -76,7 +76,7 @@ The Resteasy distribution has ported the "Restful Java" O'Reilly
 workbook examples to AS7. You can find these under the directory
 examples/oreilly-workbook-as7.
 
-Resteasy Modules in AS7, EAP6.1, Wildfly
+Resteasy Modules in AS7, EAP6.1, Wildfly {#resteasy_as7_eap61_wildfly}
 ----------------------------------------
 
 Resteasy and JAX-RS are automically loaded into your deployment's
