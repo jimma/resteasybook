@@ -164,7 +164,7 @@ There are multiple ways to make this ContextResolver available.
     via ResteasyProviderFactory.getInstance().registerProvider(Class)
     or registerProviderInstance(Object)
 
-JAXB + XML provider {#JAXB_+_XML_provider}
+JAXB + XML provider {#JAXB_XML_provider}
 ===================
 
 Resteasy is required to provide JAXB provider support for XML. It has a
@@ -249,7 +249,7 @@ example:
         }
     }
 
-JAXB + JSON provider {#JAXB_+_JSON_provider}
+JAXB + JSON provider {#JAXB_JSON_provider}
 ====================
 
 RESTEasy allows you to marshall JAXB annotated POJOs to and from JSON.
@@ -436,7 +436,7 @@ If a Book is your input then you put it on the parameter:
     @POST
     public void newBook(@Mapped(attributeAsElements={"title"}) Book book) {...}
 
-JAXB + FastinfoSet provider {#JAXB_+_FastinfoSet_provider}
+JAXB + FastinfoSet provider {#JAXB_FastinfoSet_provider}
 ===========================
 
 RESTEasy supports the FastinfoSet mime type with JAXB annotated classes.
