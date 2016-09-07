@@ -6,7 +6,7 @@ Interceptors. Filters are mainly used to modify or process incoming and
 outgoing request headers or response headers. They execute before and
 after request and response processing.
 
-Server Side Filters
+Server Side Filters {#server-side}
 ===================
 
 On the server-side you have two different types of filters.
@@ -58,7 +58,7 @@ work.
             }
         
 
-Client Side Filters
+Client Side Filters {#client-side}
 ===================
 
 On the client side you also have two types of filters:
@@ -88,7 +88,7 @@ back to application code. Here's some pseudo code to illustrate things.
                 }
             
 
-Reader and Writer Interceptors
+Reader and Writer Interceptors {#reader-writer}
 ==============================
 
 While filters modify request or response headers, interceptors deal with
@@ -100,7 +100,7 @@ specific content-encoding. They can be used to generate digital
 signatures or to post or pre-process a Java object model before or after
 it is marshalled.
 
-Per Resource Method Filters and Interceptors
+Per Resource Method Filters and Interceptors {#per-resource}
 ============================================
 
 Sometimes you want a filter or interceptor to only run for a specific
@@ -128,7 +128,7 @@ your filter and resource method
                 }
             
 
-Ordering
+Ordering {#ordering}
 ========
 
 Ordering is accomplished by using the @BindingPriority annotation on
