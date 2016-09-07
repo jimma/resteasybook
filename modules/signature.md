@@ -117,7 +117,7 @@ signatures, here's a
 [blog](http://bill.burkecentral.com/2011/02/21/multiple-uses-for-content-signature/)
 you might find interesting.
 
-Maven settings
+Maven settings {#maven_setting}
 ==============
 
 You must include the resteasy-crypto project to use the digital
@@ -129,7 +129,7 @@ signature framework.
                 <version>3.1.0-SNAPSHOT</version>
             </dependency>
 
-Signing API
+Signing API {#api}
 ===========
 
 To sign a request or response using the Resteasy client or server
@@ -187,7 +187,7 @@ javadoc for more details.
 If you are including more than one signature, then just add additional
 DKIMSignature instances to the headers of the request or response.
 
-@Signed annotation
+@Signed annotation {#signed_annotation}
 ------------------
 
 Instead of using the API, Resteasy also provides you an annotation
@@ -222,7 +222,7 @@ The above example using a bunch of the optional annotation attributes of
 `This annotation also works with the client proxy
       framework.`
 
-Signature Verification API
+Signature Verification API {#verification_api}
 ==========================
 
 If you want fine grain control over verification, this is an API to
@@ -278,7 +278,7 @@ The client side is a little bit different:
     it as a property to the ClientResponse. This will trigger the verification
     interceptors.`
 
-Annotation-based verification
+Annotation-based verification {#verification}
 -----------------------------
 
 The easiest way to verify a signature sent in a HTTP request on the
@@ -317,7 +317,7 @@ org.jboss.resteasy.security.doseta.UnauthorizedSignatureException. This
 causes a 401 error code to be sent back to the client. If you catch this
 exception using an ExceptionHandler you can browse the failure results.
 
-Managing Keys via a KeyRepository
+Managing Keys via a KeyRepository {#keys}
 =================================
 
 Resteasy manages keys for you through a
@@ -328,7 +328,7 @@ discovered via a DNS text (TXT) record lookup if configured to do so.
 You can also implement and plug in your own implementation of
 KeyRepository.
 
-Create a KeyStore
+Create a KeyStore {#create_KeyStore}
 -----------------
 
 Use the Java keytool to generate RSA key pairs. Key aliases MUST HAVE
@@ -343,7 +343,7 @@ For example:
 You can always import your own official certificates too. See the JDK
 documentation for more details.
 
-Configure Restreasy to use the KeyRepository
+Configure Restreasy to use the KeyRepository {#config_KeyRepo}
 --------------------------------------------
 
 Next you need to configure the KeyRepository in your web.xml file so
@@ -424,7 +424,7 @@ this. For example:
     request.getAttributes().put(KeyRepository.class.getName(), repository);
     request.header("DKIM-Signature", signatures);
 
-Using DNS to Discover Public Keys
+Using DNS to Discover Public Keys {#dns_pub_key}
 ---------------------------------
 
 Public keys can also be discover by a DNS text record lookup. You must

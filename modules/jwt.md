@@ -1,4 +1,4 @@
-JSON Web Signature and Encryption (JOSE-JWT)
+JSON Web Signature and Encryption (JOSE-JWT) {#JOSE-JWT}
 ============================================
 
 JSON Web Signature and Encryption (JOSE JWT) is a new specification that
@@ -6,7 +6,7 @@ can be used to encode content as a string and either digitally sign or
 encrypt it. I won't go over the spec here Do a Google search on it if
 you're interested
 
-JSON Web Signature (JWS)
+JSON Web Signature (JWS) {#json_signature}
 ========================
 
 To digitally sign content using JWS, use the
@@ -37,7 +37,7 @@ more doco here!) Here's an example:
 
           
 
-JSON Web Encryption (JWE)
+JSON Web Encryption (JWE) {#json_encryption}
 =========================
 
 To encrypt content using JWE, use the

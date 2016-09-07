@@ -9,7 +9,7 @@ requires passing the session's cookie value with each request. We have
 done some preliminary work on OAuth and also plan to work on OpenID and
 SAML integration in the future.
 
-OAuth core 1.0a
+OAuth core 1.0a {#oauth10}
 ===============
 
 RESTEasy has preliminary support for [OAuth core
@@ -25,7 +25,7 @@ for protected resources (as described by the [spec section
 > Resteasy unless there is an outcry from the community. We're focusing
 > on OAuth 2.0 protocols. Please see our [OAuth 2.0 Work](#oauth2).
 
-Authenticating with OAuth 1.0a
+Authenticating with OAuth 1.0a {#authenticating_oauth}
 ------------------------------
 
 OAuth authentication is the process in which Users grant access to their
@@ -78,7 +78,7 @@ The following configuration options are available using
 
   : OAuth 1.0a Servlet options
 
-Accessing protected resources
+Accessing protected resources {#accessing_protected_resources}
 -----------------------------
 
 After successfully receiving the Access Token and Token Secret, the
@@ -120,7 +120,7 @@ Principal and Roles, which can then be accessed using the JAX-RS
 SecurityContext. You can also protect your resources using Roles as
 described in the section "Securing JAX-RS and RESTeasy".
 
-Implementing an OAuthProvider
+Implementing an OAuthProvider {#implementing_oauthProvider}
 -----------------------------
 
 In order for RESTEasy to implement OAuth it needs you to provide an
