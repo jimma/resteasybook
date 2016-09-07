@@ -91,7 +91,7 @@ The sequence of validation constraint testing is as follows:
 3.  If no violations have been detected, call the resource method and
     validate the return value
 
-Violation reporting
+Violation reporting {#Violation_reporting}
 ===================
 
 If a validation problem occurs, either a problem with the validation
@@ -272,7 +272,7 @@ it can be surpressed by setting the context parameter
 "resteasy.validation.suppress.path" to "true". In that case, "\*" will
 be returned in the path fields.
 
-Validation Service Providers
+Validation Service Providers {#validation_provider}
 ============================
 
 The form of validation mandated by the JAX-RS 2.0 specification, based
