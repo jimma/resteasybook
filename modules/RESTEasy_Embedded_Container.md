@@ -5,7 +5,7 @@ Resteasy has a few different plugins for different embedabble HTTP
 and/or Servlet containers if use Resteasy in a test environment, or
 within an environment where you do not want a Servlet engine dependency.
 
-Undertow
+Undertow {#undertow}
 ========
 
 Undertow is a new Servlet Container that is used by Wildfly (JBoss
@@ -110,7 +110,7 @@ that shows it in action.
        }
     }
 
-Sun JDK HTTP Server
+Sun JDK HTTP Server {#http-server}
 ===================
 
 The Sun JDK comes with a simple HTTP server implementation
@@ -145,7 +145,7 @@ Maven project you must include is:
           <version>3.1.0-SNAPSHOT</version>
       </dependency>
 
-TJWS Embeddable Servlet Container
+TJWS Embeddable Servlet Container {#TJES}
 =================================
 
 RESTeasy integrates with the TJWS Embeddable Servlet container. It comes
@@ -209,7 +209,7 @@ pseudo-code example
 **NOTE:** TJWS is now deprecated. Consider using the more modern
 Undertow.
 
-Netty
+Netty {#Netty}
 =====
 
 Resteasy has integration with the popular Netty project as well..
@@ -235,7 +235,7 @@ Maven project you must include is:
           <version>3.1.0-SNAPSHOT</version>
       </dependency>
 
-Vert.x
+Vert.x {#Vert}
 ======
 
 Resteasy has integration with the popular Vert.x project as well..
