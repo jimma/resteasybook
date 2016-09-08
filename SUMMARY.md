@@ -209,7 +209,7 @@
    * [Violation reporting](modules/Validation.md#Violation_reporting)
    * [Validation Service Providers](modules/Validation.md#validation_provider)
 * [Internationalization and Localization](modules/I18N.md#I18N)
-   * [Internationalization](modules/I18N.md#Internationalization#Internationalization)
+   * [Internationalization](modules/I18N.md#Internationalization)
    * [Localization](modules/I18N.md#Localization)
 * [Maven and RESTEasy](modules/Maven_and_RESTEasy.md)
 * [JBoss Integration](modules/JBoss.md)
