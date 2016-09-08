@@ -1,15 +1,7 @@
-Documentation Support {#doc}
-=====================
-
-There's a great javadoc engine that allows you to generate javadocs for
-JAX-RS and JAXB
-called[JAX-Doclet](http://www.lunatech-labs.com/open-source/jax-doclets).
-Follow the link for more details.
-
 Migration from older versions {#Migration_from_older_versions}
 =============================
 
-Migrating from 3.0.7 to 3.0.9
+Migrating from 3.0.7 to 3.0.9 {#307_to_309}
 =============================
 
 -   You may need to upgrade your JDK to the latest 1.7.x or 1.8 releases
@@ -28,14 +20,14 @@ Migrating from 3.0.7 to 3.0.9
             context.setRequestUri(URI.create("http://foo.com/base/path")); // legal
             context.setRequestUri(URI.create("/path")); // ignored
 
-Migrating from 3.0.6 to 3.0.7
+Migrating from 3.0.6 to 3.0.7 {#306_to_307}
 =============================
 
 -   Scannotation has been removed. If you are not running within an
     application server you must use the ResteasyServletInitializer. See
     docs for more detail.
 
-Migrating from 3.0 to 3.0.4
+Migrating from 3.0 to 3.0.4 {#30_to_304}
 ===========================
 
 -   Servlet 3.0 deployments within standalone Tomcat or Jetty can now
@@ -45,7 +37,7 @@ Migrating from 3.0 to 3.0.4
     within JBoss/Wildfly. Check out the Installation/Configuration
     section of this document for more information.
 
-Migrating from 3.0-beta-6 and 3.0-rc-1
+Migrating from 3.0-beta-6 and 3.0-rc-1 {#30beta6_to_30rc1}
 ======================================
 
 -   Form parameters are now read via a provider where earlier they were
@@ -64,7 +56,7 @@ Migrating from 3.0-beta-6 and 3.0-rc-1
     you who use Restasy as-is. Specifically InjectorFactory and Registry
     have changed.
 
-Migrating from 3.0-beta-5 and 3.0-beta-6
+Migrating from 3.0-beta-5 and 3.0-beta-6 {#30beat5_to_30beta6}
 ========================================
 
 -   The JAX-RS 2.0 TCK has become very very strict in terms of the
@@ -88,7 +80,7 @@ Migrating from 3.0-beta-5 and 3.0-beta-6
     you who use Restasy as-is. Specifically InjectorFactory and Registry
     have changed.
 
-Migrating from 3.0-beta-4 and 3.0-beta-5
+Migrating from 3.0-beta-4 and 3.0-beta-5 {#30beta4_to_30beta5}
 ========================================
 
 -   JSONP support is no longer on by default. A few users have
@@ -97,8 +89,8 @@ Migrating from 3.0-beta-4 and 3.0-beta-5
     you who use Restasy as-is. Specifically InjectorFactory and Registry
     have changed.
 
-Migrating from 3.0-beta-2 and 3.0-beta-4
-========================================
+Migrating from 3.0-beta-2 and 3.0-beta-4 {#30beta2_to_30beta4}
+======================================== 
 
 -   The JAX-RS 2.0 class ClientFactory no longer exists. It has been
     replaced with ClientBuilder. You can still call newClient(), but
@@ -110,7 +102,7 @@ Migrating from 3.0-beta-2 and 3.0-beta-4
     mapped if possible. Responses returned from ExceptionMappers are
     now filtered.
 
-Migrating from 3.0-beta-1 and 3.0-beta-2
+Migrating from 3.0-beta-1 and 3.0-beta-2 {#30beta1_to_30beta2}
 ========================================
 
 -   The constructors for ResteasyClient class are no longer public. You
@@ -119,7 +111,7 @@ Migrating from 3.0-beta-1 and 3.0-beta-2
     uses ResteasyProviderFactory.getInstance(), but instead instantiates
     a new one. This will probably not effect most uses.
 
-Migrating from 2.x to 3.0-beta-1
+Migrating from 2.x to 3.0-beta-1 {#2x_to_30beta1}
 ================================
 
 -   Resteasy manual client API, interceptors, StringConverters,
@@ -146,7 +138,7 @@ Migrating from 2.x to 3.0-beta-1
     you are not running under Servlet 3.0, async HTTP server-side, will
     be faked and run synchronously in same request thread.
 
-Migrating from 2.3.2 to 2.3.3
+Migrating from 2.3.2 to 2.3.3 {#232_to_233}
 =============================
 
 -   MultipartInput has a new close() method. If you have a read body
@@ -155,13 +147,13 @@ Migrating from 2.3.2 to 2.3.3
     these possible temporary files are deleted on GC or JDK shutdown.
     Other multipart providers clean up automatically.
 
-Migrating from 2.3.0 to 2.3.1
+Migrating from 2.3.0 to 2.3.1 {#230_to_231}
 =============================
 
 -   sjsxp has been removed as a dependency for the Resteasy JAXB
     provider
 
-Migrating from 2.2.x to 2.3
+Migrating from 2.2.x to 2.3 {#22x_to_23}
 ===========================
 
 -   The Apache Abdera integration has been removed as a project. If you
@@ -248,7 +240,7 @@ Migrating from 1.2.x to 2.0 {#Migrating_to_Resteasy_12_20}
 -   Spring integration compiled against Spring 3.0.3. It may or may not
     still work with 2.5.6 and lower
 
-Migrating from 1.2.GA to 1.2.1.GA {#migrating_1.2_1.2.1}
+Migrating from 1.2.GA to 1.2.1.GA {#migrating_12_121}
 =================================
 
 Methods @Deprecated within 1.2.GA have been removed. This is in the
