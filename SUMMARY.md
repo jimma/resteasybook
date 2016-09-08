@@ -236,7 +236,7 @@
    * [Migrating from 2.1.x to 2.2](modules/Migration_from_older_versions.md#21_22)
    * [Migrating from 2.0.x to 2.1](modules/Migration_from_older_versions.md#20_21)
    * [Migrating from 1.2.x to 2.0](modules/Migration_from_older_versions.md#Migrating_to_Resteasy_12_20)
-   * [Migrating from 1.2.GA to 1.2.1.GA](modules/Migration_from_older_versions.md#migrating_1.2_1.2.1)
+   * [Migrating from 1.2.GA to 1.2.1.GA](modules/Migration_from_older_versions.md#migrating_12_121)
    * [Migrating from 1.1 to 1.2](modules/Migration_from_older_versions.md#Migrating_to_Resteasy_1_1_1_2)
 * [Books](modules/Books.md)
 

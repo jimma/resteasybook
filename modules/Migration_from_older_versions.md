@@ -240,7 +240,7 @@ Migrating from 1.2.x to 2.0 {#Migrating_to_Resteasy_12_20}
 -   Spring integration compiled against Spring 3.0.3. It may or may not
     still work with 2.5.6 and lower
 
-Migrating from 1.2.GA to 1.2.1.GA {#migrating_1.2_1.2.1}
+Migrating from 1.2.GA to 1.2.1.GA {#migrating_12_121}
 =================================
 
 Methods @Deprecated within 1.2.GA have been removed. This is in the
