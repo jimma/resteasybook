@@ -213,8 +213,6 @@
    * [Localization](modules/I18N.md#Localization)
 * [Maven and RESTEasy](modules/Maven_and_RESTEasy.md)
 * [JBoss Integration](modules/JBoss.md)
-   * [JBoss AS 5.x Integration](modules/JBoss.md#JBoss5)
-   * [JBoss AS 6/7 Integration](modules/JBoss.md#JBoss AS 6)
 * [RESTEasy WADL Support](modules/WADL.md#WADL)
    * [RESTEasy WADL Support for Servlet Container](modules/WADL.md#servlet_container)
    * [RESTEasy WADL support for Sun JDK HTTP Server](modules/WADL.md#http_server)
