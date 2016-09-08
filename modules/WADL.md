@@ -5,7 +5,7 @@ RESTEasy has its own support to generate WADL for its resources, and it
 supports several different containers. The following text will show you
 how to use this feature in different containers.
 
-RESTEasy WADL Support for Servlet Container
+RESTEasy WADL Support for Servlet Container {#servlet_container}
 ===========================================
 
 RESTEasy WADL uses ResteasyWadlServlet to support servlet container. It
@@ -28,7 +28,7 @@ can be accessed from the configured URL:
 
     /application.xml
 
-RESTEasy WADL support for Sun JDK HTTP Server
+RESTEasy WADL support for Sun JDK HTTP Server {#http_server}
 =============================================
 
 RESTEasy has provided a ResteasyWadlDefaultResource to generate WADL
@@ -74,7 +74,7 @@ default:
     @Path("/application.xml")
     public class ResteasyWadlDefaultResource
 
-RESTEasy WADL support for Netty Container
+RESTEasy WADL support for Netty Container {#netty}
 =========================================
 
 RESTEasy WADL support for Netty Container is simliar to the support for
@@ -101,7 +101,7 @@ Netty Container, if the resources in the deployment changes at runtime,
 the ResteasyWadlGenerator.generateServiceRegistry() need to be re-run to
 refresh the WADL info.
 
-RESTEasy WADL Support for Undertow Container
+RESTEasy WADL Support for Undertow Container {#undertow}
 ============================================
 
 The RESTEasy Undertow Container is a embedded Servlet Container, and
