@@ -1,0 +1,15 @@
+{
+  "plugins": [
+      "github",
+      "expandable-chapters",
+       "splitter"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/resteasy/resteasy"
+    },
+    "theme-default": {
+       "showLevel": true
+    }
+  }
+}
